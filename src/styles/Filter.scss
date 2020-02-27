@@ -1,0 +1,21 @@
+.ant-collapse-header {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.filter-panel {
+  background-color: #ffffff;
+}
+
+#view-filter-results {
+  margin: 20px 0px;
+  float: right;
+}
+
+.red:hover,
+.red:active,
+.red:visited,
+.red:focus,
+.red:visited .red ::selection {
+  color: red !important;
+}
