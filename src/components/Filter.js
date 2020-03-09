@@ -4,7 +4,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "../styles/Filter.scss";
 const { Panel } = Collapse;
 
-const Filter = ({ allProducts, setProducts, products }) => {
+const Filter = ({ allProducts, setProducts }) => {
   const [brandFilter, setBrandFilter] = useState("");
   const [apparelFilter, setApparelFilter] = useState("");
   const [sizeFilter, setSizeFilter] = useState("");
@@ -17,14 +17,10 @@ const Filter = ({ allProducts, setProducts, products }) => {
     if (brandFilter.length > 1) {
       var holder = allProducts.filter(obj => obj.brand === brandFilter);
       setProducts(holder);
-      console.log("brand:" + brandFilter);
-      console.log("productsforbrand" + products);
     }
     if (apparelFilter.length > 1) {
       var holder = allProducts.filter(obj => obj.type === apparelFilter);
       setProducts(holder);
-      console.log("apparel:" + apparelFilter);
-      console.log("productsfora" + products);
     }
 
     if ((apparelFilter.length > 1) & (brandFilter.length > 1)) {
@@ -131,6 +127,7 @@ const Filter = ({ allProducts, setProducts, products }) => {
         style={{ marginTop: "20px", float: "right" }}
         variant="outline-dark"
         onClick={viewProducts}
+        data-testid="button-test"
       >
         View Results
       </Button>

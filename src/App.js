@@ -20,13 +20,13 @@ import "./styles/App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA3RpF6mVTPOERmNM8Xtdy8jvP34hqQzoA",
-  authDomain: "rinserepeat-1292e.firebaseapp.com",
-  databaseURL: "https://rinserepeat-1292e.firebaseio.com",
-  projectId: "rinserepeat-1292e",
-  storageBucket: "rinserepeat-1292e.appspot.com",
-  messagingSenderId: "397943590232",
-  appId: "1:397943590232:web:c6c91ac2cb6d13d572e92d"
+  apiKey: "AIzaSyAr80svLYHBvWOdgWpXqu6Rzy4dxyCFeNA",
+  authDomain: "travis-314c6.firebaseapp.com",
+  databaseURL: "https://travis-314c6.firebaseio.com",
+  projectId: "travis-314c6",
+  storageBucket: "travis-314c6.appspot.com",
+  messagingSenderId: "309313916898",
+  appId: "1:309313916898:web:8ec0ac8732fac87ab6b3bb"
 };
 
 firebase.initializeApp(firebaseConfig);
