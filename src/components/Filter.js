@@ -127,7 +127,8 @@ const Filter = ({ allProducts, setProducts }) => {
         style={{ marginTop: "20px", float: "right" }}
         variant="outline-dark"
         onClick={viewProducts}
-        data-testid="button-test"
+        data-testid="filter"
+        value="product-list"
       >
         View Results
       </Button>
