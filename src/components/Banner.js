@@ -9,7 +9,9 @@ const Banner = () => {
     <Navbar bg="dark" variant="dark" className="navigation-bar" sticky="top">
       <Navbar.Brand className="home">
         <Link to="/">
-          <h2 className="title">find the fit.</h2>
+          <h2 data-cy="hi" className="title">
+            find the fit.
+          </h2>
         </Link>
       </Navbar.Brand>
       <Nav className="ml-auto"></Nav>

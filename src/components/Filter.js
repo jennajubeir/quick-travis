@@ -46,11 +46,17 @@ const Filter = ({ allProducts, setProducts }) => {
         }
         expandIconPosition="right"
       >
-        <Panel className="filter-panel" header="Brands" key="1">
+        <Panel
+          data-cy="clickme"
+          className="filter-panel"
+          header="Brands"
+          key="1"
+        >
           {["Adidas", "Athleta", "Lululemon", "Nike", "Under Armour"].map(
             brand => (
               <div>
                 <a
+                  data-cy="hi"
                   className="red"
                   onClick={() => setBrandFilter(brand)}
                   key={brand}
